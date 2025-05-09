@@ -1,0 +1,13 @@
+---
+title: "1,500 scientists lift the lid on reproducibility"
+author: "ChrisZzz"
+date: "2016-05-25"
+output: html_document
+---
+
+
+# Survey sheds light on the 'crisis' rocking research
+**More than 70%...**, and more than half...
+
+
+The data reveal...

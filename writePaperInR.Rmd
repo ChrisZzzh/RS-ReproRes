@@ -1,0 +1,92 @@
+---
+title: "writePaperInR"
+author: "ChrisZzz"
+date: "`r Sys.Date()`"
+output: 
+  word_document:
+    toc: true
+    toc_float: true
+bibliography: references.bib
+link-citations: true
+---
+# A header
+
+:toc: true adds a table of contents
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown (this line will be a header)
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r, echo=FALSE}
+
+```
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+
+I love **R** (bold)
+I love _R_ (italics)
+
+# A header linked to text {#markdown-header}
+
+And a text linked to the header [link to header](#markdown-header)
+
+[link to a website](https://lucidmanager.org/data-science/games-in-r/)
+
+# Lists
+
+1. item 1
+2. item 2
+3. item 3
+
+1. item 1
+    a. use 4 spaces before this for sub-lists
+    b. item 2
+        i. item 1
+        ii. item 2
+2. item 2
+
+# inserting images
+
+![Figure caption(write this for accessibility)](img/pathtoanimage.png)
+
+# Tables
+
+| Header 1 | Header 2 |
+|----------|----------|
+|item1    | item2   |
+
+
+# Code chunks
+
+Without the {r} syntax, this will print the code and not run it.
+
+```
+plot(pressure)
+```
+
+# Reference
+
+Citation to my paper @cardona2014 and @cardona2019
